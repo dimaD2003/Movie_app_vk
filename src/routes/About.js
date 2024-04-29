@@ -5,7 +5,7 @@ function About(props) {
   console.log(props);
   return (
     <div className="about__container">
-      <span>О проекте: я сделал этот проект, потому что люблю фильмы</span>
+      <p > Я сделал этот проект, потому что люблю фильмы и стажировки в VK <span>&#10084;</span>.</p>
     </div>
   );
 }

@@ -1,25 +1,53 @@
-.nav {
-  position: fixed;
-  top: 50px;
-  left: 10px;
+
+.menu{
+    height: 70px;
+    margin: 25px;
+    background-color: rgba(2, 0, 8, 0.685);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.menu_logo{
+  font-size: 24px;
+  padding: 0px 10px ;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 5px;
+  font-weight: 500;
+  color: antiquewhite;
+}
+.menu_logo::after {
+  content: "  Сервис поиска кино";
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.menu_items{
+  width: 33%;
+  margin-right: 50px;
   display: flex;
-  flex-direction: column;
-  background-color: white;
-  padding: 10px 20px;
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
-  border-radius: 5px;
+  justify-content: space-between;
 }
 
-.nav a {
-  text-decoration: none;
-  color: #0008fc;
-  text-transform: uppercase;
-  font-size: 12px;
-  text-align: center;
-  font-weight: 600;
+.menu_item{
+    text-decoration: none; 
+    color: aliceblue;
+    font-size: 19px;
+    font-weight: 400;
 }
 
-.nav a:not(:last-child) {
-  margin-bottom: 20px;
+@media (max-width:600px) {
+  .menu_logo{
+    display: none;
+  }
+  .menu_items{
+   display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .menu_item{
+    margin: 0 5px;
+  }
 }
